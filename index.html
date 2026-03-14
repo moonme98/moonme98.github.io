@@ -184,19 +184,19 @@
                         <div class="desc">
                             <div class="piece">
                                 <span class="sub_tit">OVERVIEW</span>
-                                <span>러닝 기록 관리 서비스</span>
+                                <span>러닝 기록 관리 및 시각화 서비스</span>
                             </div>
                             <div class="piece">
                                 <span class="sub_tit">ARCHITECTURE</span>
-                                <span>React → Spring Boot → MySQL</span>
+                                <span>REST API Architecture</span>
                             </div>
                             <div class="piece">
                                 <span class="sub_tit">AUTH</span>
-                                <span>JWT 인증 (Interceptor)</span>
+                                <span>JWT 인증 처리</span>
                             </div>
                             <div class="piece">
                                 <span class="sub_tit">ROLE</span>
-                                <span>Front-End · API 설계 · DB 연동</span>
+                                <span>UI 구현 및 DB 설계</span>
                             </div>
                         </div>
                         <div class="link">
@@ -211,9 +211,9 @@
                         <div class="tit">
                             <span>PROJECT DETAIL</span>
                             <p>
-                                러닝 기록을 관리하고 인증 시스템을 구현한 Full-Stack 웹 프로젝트입니다.
-                                React 기반 UI 설계와 Spring Boot REST API 서버 연동을 통해
-                                사용자 흐름 전체를 직접 구현했습니다.
+                            러닝 기록을 저장하고 시각화할 수 있는 Full-Stack 서비스입니다.
+                            React 기반 UI와 Spring Boot REST API 서버를 연동하여
+                            사용자의 운동 기록 관리와 데이터 조회 기능을 구현했습니다.
                             </p>
                         </div>
                         <!-- Finder Window -->
@@ -226,10 +226,10 @@
                                 </div>
                                 <div class="finder_path">Macintosh HD › Projects › WINGSTEP</div>
                                 <div class="finder_toolbar">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
+                                    <span><img src="images/img/upload.png" alt="upload"></span>
+                                    <span><img src="images/img/heart.png" alt="heart"></span>
+                                    <span><img src="images/img/menu-dots.png" alt="menu-dots"></span>
+                                    <span><img src="images/img/search.png" alt="search"></span>
                                 </div>
                             </div>
                             <div class="finder_body">
@@ -247,6 +247,7 @@
                                         <ul>
                                             <li>React</li>
                                             <li>Spring Boot</li>
+                                            <li>MyBatis</li>
                                             <li>MySQL</li>
                                         </ul>
                                     </div>
@@ -290,22 +291,26 @@
                             <div class="photo">
                                 <img src="images/img/trippy_main.jpg" alt="트리피 메인 화면">
                             </div>
+
                             <div class="project">
                                 <div class="piece">
                                     <span class="sub_tit">#SITE</span>
                                     <span>TRIPPY</span>
                                 </div>
+
                                 <div class="piece">
                                     <span class="sub_tit">#PERIOD</span>
                                     <span>2 Weeks</span>
                                 </div>
+
                                 <div class="piece">
                                     <span class="sub_tit">#TYPE</span>
                                     <span>Full-Stack</span>
                                 </div>
+
                                 <div class="piece">
                                     <span class="sub_tit">#STACK</span>
-                                    <span>React · Spring Boot</span>
+                                    <span>JSP · JDBC · Oracle</span>
                                 </div>
                             </div>
                         </div>
@@ -321,22 +326,18 @@
                                 <span class="sub_tit">OVERVIEW</span>
                                 <span>개인 맞춤 여행 코스 제작 및 관리 플랫폼</span>
                             </div>
-
                             <div class="piece">
                                 <span class="sub_tit">ARCHITECTURE</span>
-                                <span>React → Spring Boot → MySQL</span>
+                                <span>JSP · Servlet MVC (Model2)</span>
                             </div>
-
                             <div class="piece">
-                                <span class="sub_tit">AUTH</span>
-                                <span>JWT 인증 · Role 기반 접근 제어</span>
+                                <span class="sub_tit">PATTERN</span>
+                                <span>MVC Model2 Architecture</span>
                             </div>
-
                             <div class="piece">
                                 <span class="sub_tit">ROLE</span>
                                 <span>UI 설계 및 코스 기능 구현</span>
                             </div>
-
                         </div>
                         <div class="link">
                             <span>LINK</span>
@@ -344,16 +345,17 @@
                         </div>
                     </div>
                 </div>
-               <div class="sub">
+                <div class="sub">
                     <div class="inner">
                         <div class="tit">
                             <span>PROJECT DETAIL</span>
                             <p>
                                 TRIPPY는 사용자가 자신의 취향과 일정에 맞는 여행 코스를 직접 설계하고
                                 관리할 수 있도록 제작한 개인 맞춤형 여행 플랫폼입니다.
-                                React 기반 UI와 Spring Boot REST API 서버를 연동하여
-                                코스 생성, 일정 관리, 게시판 기능, 사용자 인증까지
-                                전체 흐름을 Full-Stack으로 구현했습니다.
+                                JSP와 Servlet 기반의 MVC Model2 구조로 구현되었으며,
+                                사용자는 코스를 생성하고 일정과 방문지를 관리할 수 있습니다.
+                                또한 게시판을 통해 여행 경험을 공유할 수 있도록 구성했습니다.
+                                데이터 처리는 MyBatis를 통해 Oracle 데이터베이스와 연동했습니다.
                             </p>
                         </div>
                         <!-- Finder Window -->
@@ -374,6 +376,7 @@
                             </div>
                             <div class="finder_body">
                                 <div class="finder_sidebar">
+
                                     <div class="sidebar_section">
                                         <p>Favorites</p>
                                         <ul>
@@ -385,10 +388,10 @@
                                     <div class="sidebar_section">
                                         <p>Tags</p>
                                         <ul>
-                                            <li>React</li>
-                                            <li>Spring Boot</li>
+                                            <li>JSP</li>
+                                            <li>Servlet</li>
+                                            <li>JDBC</li>
                                             <li>Oracle</li>
-                                            <li>MyBatis</li>
                                         </ul>
                                     </div>
                                 </div>

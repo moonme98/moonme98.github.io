@@ -81,7 +81,7 @@ a {
     font-weight: 600;
     color: #666;
 }
-#portfolio_fn .portfolio .finder_toolbar {
+/* #portfolio_fn .portfolio .finder_toolbar {
     display: flex;
     gap: 14px;
 }
@@ -90,7 +90,39 @@ a {
     height: 16px;
     background: #ddd;
     border-radius: 4px;
+} */
+ #portfolio_fn .portfolio .finder_toolbar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
+#portfolio_fn .portfolio .finder_toolbar span {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+#portfolio_fn .portfolio .finder_toolbar span:hover {
+    background: #e9e9e9;
+}
+#portfolio_fn .portfolio .finder_toolbar img {
+    width: 16px;
+    height: 16px;
+    opacity: 0.75;
+}
+#portfolio_fn .portfolio .finder_toolbar span:hover img {
+    opacity: 1;
+}
+#portfolio_fn .portfolio .finder_toolbar span:last-child {
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 1px solid #e3e3e3;
+}
+
 
 #portfolio_fn .portfolio .finder_body {
     display: flex;
