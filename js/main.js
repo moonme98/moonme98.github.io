@@ -168,21 +168,4 @@
 			$("html, body").stop().animate({scrollTop: pos}, 800);
 		}
 	});
-
-
-	// project link
-	function mobileLink(){
-		if (window.innerWidth <= 1000){
-			$(".project1").attr({href: "project1/mobile/index.html"});
-			$(".project2").attr({href: "project2/mobile/index.html"});
-		}
-		else{
-			$(".project1").attr({href: "project1/pc/index.html"});
-			$(".project2").attr({href: "project2/pc/index.html"});
-		}
-
-		$(".project3").attr({href: "project3/index.html"});
-	}
-
-	mobileLink();
 });
